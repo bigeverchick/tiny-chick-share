@@ -7,4 +7,4 @@ WIP local network file transfer
 
 If the original images are too large, you can choose whether to upload a compressed version.
 
-Suitable for transferring files without installing third-party apps,which works well on game console.
+Suitable for transferring files without installing third-party apps, which works well on a game console.
