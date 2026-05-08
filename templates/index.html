@@ -32,6 +32,10 @@ style="width:300px"></progress>
 <h2>传输文字</h2>
 
 <textarea id="text"
+<<<<<<< HEAD
+=======
+onclick="this.select()"
+>>>>>>> e727ac5 (update)
 style="width:500px;height:150px"></textarea>
 
 <br><br>
@@ -197,9 +201,23 @@ async function copyText(){
 
     let text = document.getElementById("text").value;
 
+<<<<<<< HEAD
     await navigator.clipboard.writeText(text);
 
     alert("已复制到剪贴板");
+=======
+    try {
+        await navigator.clipboard.writeText(text);
+        alert("复制成功");
+    } catch (err) {
+
+        let ta = document.getElementById("text");
+        ta.select();
+        document.execCommand("copy");
+
+        alert("复制成功");
+    }
+>>>>>>> e727ac5 (update)
 }
 
 loadText();
@@ -207,4 +225,8 @@ loadText();
 </script>
 
 </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> e727ac5 (update)
